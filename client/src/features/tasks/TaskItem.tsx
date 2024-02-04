@@ -6,6 +6,7 @@ import { useAppDispatch } from '../../redux/store';
 function TaskItem({ task }: { task: Task }): JSX.Element {
   const dispatch = useAppDispatch();
 
+  // УДАЛЕНИЕ
   const onHandleRemoveTask = async (id: TaskId): Promise<void> => {
     const res = await fetch(`/api/tasks/${id}`, {
       method: 'DELETE',

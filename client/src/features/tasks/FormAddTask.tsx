@@ -8,6 +8,7 @@ function FormAddTask(): JSX.Element {
 
   const dispatch = useAppDispatch();
 
+  // ДОБАВЛЕНИЕ
   const onHandleAddTask: React.FormEventHandler<HTMLFormElement> = async (e): Promise<void> => {
     e.preventDefault();
     const res = await fetch('/api/tasks', {
