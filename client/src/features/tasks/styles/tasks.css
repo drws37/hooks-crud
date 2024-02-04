@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.task-main {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  height: 30px;
+
+  width: 100%;
+}
+
+input,
+h3 {
+  margin-right: 10px;
+}
+
+.addForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addForm_input {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #242424;
+  min-height: 50px;
+
+  margin: 40px 0;
+
+  font-size: 24px;
+
+  transition: width 0.3s ease;
+}
+
+.addForm_input:focus {
+  outline: none;
+}
+
+.addForm_submit {
+  max-height: 40px;
+  max-width: 10em;
+  margin-bottom: 40px;
+}
+
+.btn-container {
+  display: flex;
+  align-self: flex-end;
+}
+
+.btn-remove {
+  display: flex;
+  margin-left: auto !important;
+
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff00;
+}
+
+.btn-remove:hover{
+  border: none;
+}
